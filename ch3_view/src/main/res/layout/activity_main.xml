@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선릉역 http://www.naver.com 너무 a@a.com 멀어요 02-1234-5678"
+        android:autoLink="web|phone|email"
+        android:lines="1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imgtest"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        />
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="전화번호 입력"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click me"
+        android:layout_marginTop="16dp"
+        />
+
+
+
+</LinearLayout>
