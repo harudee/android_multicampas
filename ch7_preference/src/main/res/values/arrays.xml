@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--목록항목 화면출력 문자열-->
+    <string-array name="my_color">
+        <item>빨강</item>
+        <item>파랑</item>
+        <item>초록</item>
+    </string-array>
+
+    <!--각 목록별 설정값 지정-->
+    <string-array name="my_color_values">
+        <item>#FF0000</item>
+        <item>#0000FF</item>
+        <item>#00FF00</item>
+    </string-array>
+
+</resources>

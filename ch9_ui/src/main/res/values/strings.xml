@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ch9_UI</string>
+
+    <!-- toggle 생성자 매개변수(int 필요)로 지정하는 drawer 상태표현 문자열 -->
+    <string name="drawer_open">opened drawer</string>
+    <string name="drawer_close">closed drawer</string>
+
+</resources>

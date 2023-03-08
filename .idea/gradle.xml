@@ -16,6 +16,10 @@
             <option value="$PROJECT_DIR$/ch5_event" />
             <option value="$PROJECT_DIR$/ch6_resource" />
             <option value="$PROJECT_DIR$/ch7_database" />
+            <option value="$PROJECT_DIR$/ch7_file" />
+            <option value="$PROJECT_DIR$/ch7_preference" />
+            <option value="$PROJECT_DIR$/ch8_menu" />
+            <option value="$PROJECT_DIR$/ch9_ui" />
           </set>
         </option>
       </GradleProjectSettings>
