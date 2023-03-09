@@ -1,6 +1,7 @@
 package com.example.ch9_ui;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.ch9_ui.databinding.ActivityMainBinding;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 
@@ -52,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        //actionBar ;
+        //위치 중요 : toggle선언 이전에 해줘야 한다.
+        setSupportActionBar(binding.toolbar);
+
+
         //viewPager....
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(this);
         binding.viewPager.setAdapter(adapter);
@@ -62,6 +69,22 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toggle.syncState(); //제스쳐와 토글버튼 sync
 
+
+        //tabLayout과 연동
+        new TabLayoutMediator(binding.tabs, binding.viewPager, (tab, position) -> {
+            //viewPager의 화면 갯수만큼 호출
+            //매개변수 = tap button
+            // 탭버튼 구성
+
+            tab.setText("Tab"+position);
+
+        }).attach();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
