@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--외부 앱에게 우리의 파일을 공유하려면 설정해야함-->
+    <external-path
+        name="myfiles"
+        path="Android/data/com.example.ch13_provider/files/Pictures"/>
+
+</paths>
