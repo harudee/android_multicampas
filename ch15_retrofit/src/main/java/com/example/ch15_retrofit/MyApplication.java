@@ -4,6 +4,7 @@ package com.example.ch15_retrofit;
 import android.app.Application;
 
 import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 //Application 클래스
 //앱이 실행되면서 최초에 가장먼저 생성되는 객체 하나만...
@@ -17,7 +18,8 @@ public class MyApplication extends Application {
     public MyApplication(){
 
         Retrofit.Builder builder = new Retrofit.Builder();
-        builder.baseUrl("retrofit2://");
+        builder.baseUrl("https://reqres.in/");
+        builder.addConverterFactory(GsonConverterFactory.create());
 
         retrofit = builder.build();
         networkService = retrofit.create(INetworkService.class);
